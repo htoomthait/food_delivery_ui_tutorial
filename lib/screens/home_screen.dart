@@ -158,21 +158,24 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           RecentOrders(),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Text(
-                "Nearby Restaurants",
-                textAlign: TextAlign.start,
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 1.2,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  "Nearby Restaurants",
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.w600,
+                    letterSpacing: 1.2,
+                  ),
                 ),
-              ),
 
-              _buildRestaurants(),
-            ],
+                _buildRestaurants(),
+              ],
+            ),
           ),
         ],
       ),
